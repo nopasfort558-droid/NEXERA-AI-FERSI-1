@@ -1,0 +1,27 @@
+{
+  "id": "default_bot",
+  "name": "NEXERA Rudi Bot",
+  "ownerPhone": "",
+  "aiProvider": "chatgpt",
+  "aiModel": "gpt-4o-mini",
+  "speechStyle": "santai",
+  "customPrompt": "",
+  "features": {
+    "aiAutoReply": true,
+    "customCommands": true,
+    "miniGames": true,
+    "stickerMaker": true,
+    "welcomeMessage": true,
+    "antiSpam": true,
+    "ownerAdmin": true
+  },
+  "groupMode": "mention_only",
+  "allowPrivate": true,
+  "allowGroup": true,
+  "connectionMethod": "qr",
+  "phoneNumber": "",
+  "welcomeText": "Halo! Saya bot WhatsApp cerdas ditenagai oleh NEXERA AI. Ketik .menu untuk melihat fitur yang tersedia.",
+  "prefix": ".",
+  "createdAt": "2026-10-31T13:50:51.907Z",
+  "updatedAt": "2026-11-01T07:17:15.084Z"
+}

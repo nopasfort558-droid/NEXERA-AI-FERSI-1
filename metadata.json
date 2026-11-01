@@ -1,0 +1,6 @@
+{
+  "name": "NEXERA AI",
+  "description": "NEXERA AI - Asisten AI Cerdas dengan Fitur Chat AI, AI Image Generator, dan Vision AI bertema anime futuristik Gojo Satoru & Sasuke Uchiha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

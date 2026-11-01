@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-orbitron: 'Orbitron', sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #030712;
+    color: #f1f5f9;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Cyber Glass and Glow Effects */
+.glass-panel {
+  background: rgba(10, 15, 30, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.glass-panel-purple {
+  background: rgba(18, 10, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Cyber corner cuts */
+.cyber-box {
+  position: relative;
+  clip-path: polygon(
+    0 12px, 
+    12px 0, 
+    calc(100% - 12px) 0, 
+    100% 12px, 
+    100% calc(100% - 12px), 
+    calc(100% - 12px) 100%, 
+    12px 100%, 
+    0 calc(100% - 12px)
+  );
+}
+
+/* Custom animated pulse */
+@keyframes electricPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.5));
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.8));
+  }
+}
+
+.animate-electric {
+  animation: electricPulse 4s infinite ease-in-out;
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
